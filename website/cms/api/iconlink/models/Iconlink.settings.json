@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "iconlinks",
+  "info": {
+    "name": "iconlink",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Icon": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    }
+  }
+}

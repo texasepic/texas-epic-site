@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/announcetexts",
+      "handler": "Announcetext.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/announcetexts/count",
+      "handler": "Announcetext.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/announcetexts/:id",
+      "handler": "Announcetext.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/announcetexts",
+      "handler": "Announcetext.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/announcetexts/:id",
+      "handler": "Announcetext.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/announcetexts/:id",
+      "handler": "Announcetext.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

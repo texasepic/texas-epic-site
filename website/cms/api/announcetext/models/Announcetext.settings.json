@@ -1,0 +1,21 @@
+{
+  "connection": "default",
+  "collectionName": "announcetexts",
+  "info": {
+    "name": "announcetext",
+    "description": "basic announcement with just text"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "text"
+    }
+  }
+}
