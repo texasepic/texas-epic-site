@@ -5,16 +5,15 @@ import Layout from '../components/layout'
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <h1>We are Epic Movement. </h1>
+    <p>Our vision is to see movements everywhere so that everyone knows someone who truly follows Christ.</p>
     <ul>
       {data.allStrapiAnnouncement.edges.map(document => (
         <li key={document.node.id}>
           <h2>
             <Link to={`/${document.node.id}`}>{document.node.title}</Link>
           </h2>
-          <Img fixed={document.node.image.childImageSharp.fixed}/>
+          <Img fluid={document.node.image.childImageSharp.fluid} />
           <p>{document.node.content}</p>
         </li>
       ))}
@@ -35,8 +34,8 @@ export const pageQuery = graphql`
           content
           image {
             childImageSharp {
-              fixed(width: 250, height: 200) {
-                ...GatsbyImageSharpFixed
+                fluid(maxWidth: 960) {
+                ...GatsbyImageSharpFluid
               }
             }
           }
