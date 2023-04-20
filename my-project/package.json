@@ -12,7 +12,7 @@
   "devDependencies": {},
   "dependencies": {
     "gatsby-image": "^2.2.30",
-    "gatsby-plugin-sharp": "^2.2.36",
+    "gatsby-plugin-sharp": "^4.25.1",
     "gatsby-transformer-sharp": "^2.3.2",
     "knex": "latest",
     "sqlite3": "latest",
